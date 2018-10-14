@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kontakt</title>
+    <meta name="description" content="Najlepsza kawiarnia w Nowej Soli. Duży wybór lodów, ciast i deserów.">
+    <meta name="keywords" content="kawiarnia,kawa,ciasta,desery,czekolada,lody">
+</head>
+<body>
+
+<header>
+    <div>
+        <span>Kontakt</span>
+    </div>
+</header>
+
+<main>
+    <div id="contact-page">
+        <section>
+            <h2>Kontakt</h2>
+            <ul>
+                <li>
+                    <span>Telefon:</span>
+                    <span>782&nbsp;293&nbsp;701</span>
+                </li>
+                <li>
+                    <span>Email:</span>
+                    <span><a href="mailto:cafewanilia@o2.pl">cafewanilia@o2.pl</a></span>
+                </li>
+                <li>
+                    <span>Adres:</span>
+                    <span>Pl.&nbsp;Wyzwolenia&nbsp;10, Nowa&nbsp;Sól</span>
+                </li>
+            </ul>
+            <h2>Godziny otwarcia</h2>
+            <ul>
+                <li>
+                    <span>pon.-piąt.:</span>
+                    <span>10:00&nbsp;-&nbsp;19:00</span>
+                </li>
+                <li>
+                    <span>sob.:</span>
+                    <span>11:00&nbsp;-&nbsp;19:00</span>
+                </li>
+                <li>
+                    <span>niedz.:</span>
+                    <span>12:00&nbsp;-&nbsp;18:00</span>
+                </li>
+            </ul>
+            <form>
+                <div>
+                    <label for="imie">Imię</label>
+                    <input id="imie" type="text" name="imie">
+                </div>
+                <div>
+                    <label for="nazwisko">Nazwisko</label>
+                    <input id="nazwisko" type="text" name="nazwisko">
+                </div>
+                <div>
+                    <label for="telefon">Telefon</label>
+                    <input id="telefon" type="text" name="telefon">
+                </div>
+                <div>
+                    <label for="temat">Temat:</label>
+                    <select id="temat" required>
+                        <option value="">Wybierz</option>
+                        <optgroup label="Rezerwacje">
+                            <option value="anulowanie-rezerwacji">Anulowanie rezerwacji</option>
+                            <option value="zlozenie-rezerwacji">Złożenie rezerwacji</option>
+                            <option value="pytanie-o-rezerwacje">Pytanie o rezerwację</option>
+                        </optgroup>
+                        <optgroup label="Wyroby">
+                            <option value="przepis">Pytanie o przepis</option>
+                            <option value="alergeny">Pytanie o alergeny</option>
+                        </optgroup>
+                        <optgroup label="Oferta">
+                            <option value="tort">Zamówienie na tort</option>
+                        </optgroup>
+                    </select>
+                </div>
+                <div>
+                    <fieldset>
+                        <legend>Wybierz płeć:</legend>
+                        <input type="radio" name="plec" id="kobieta" value="kobieta">
+                        <label for="kobieta">Kobieta</label>
+                        <input type="radio" name="plec" id="mezczyzna" value="mezczyzna">
+                        <label for="mezczyzna">Mężczyzna</label>
+                    </fieldset>
+                </div>
+                <div>
+                    <fieldset>
+                        <legend>Wybierz ulubione kolory:</legend>
+                        <input type="checkbox" id="czerwony" name="kolor" value="czerwony"/>
+                        <label for="czerwony">Czerwony</label>
+                        <input type="checkbox" id="niebieski" name="kolor" value="niebieski"/>
+                        <label for="niebieski">Niebieski</label>
+                        <input type="checkbox" id="zielony" name="kolor" value="zielony"/>
+                        <label for="zielony">Zielony</label>
+                    </fieldset>
+                </div>
+                <div>
+                    <textarea rows="4" cols="50" maxlength="200" placeholder="Wpisz wiadomość"></textarea>
+                </div>
+                <button type="reset">Wyczyść</button>
+                <button type="submit">Wyślij</button>
+            </form>
+        </section>
+    </div>
+</main>
+
+<footer>
+    <span>Copyright &copy;2018 Kawiarnia</span>
+</footer>
+
+</body>
+</html>
