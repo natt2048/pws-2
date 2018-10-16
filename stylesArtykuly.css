@@ -1,0 +1,17 @@
+/* ZADANIE 1.3*/
+#textSizeEm {
+    font-size: 1.5em;
+}
+
+#textSizePx {
+    font-size: 10px;
+}
+
+#textSizePt {
+    font-size: 14pt;
+}
+
+#textSizePercent {
+    font-size: 82%;
+}
+
