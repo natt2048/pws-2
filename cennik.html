@@ -18,37 +18,46 @@
 <main>
     <section>
         <h2>Cennik</h2>
-        <table id="tabelka">
+        <table>
             <caption>Tabelka</caption>
             <thead>
             <tr>
-                <th>Test Test Test</th>
+                <th>Tytuł 1</th>
                 <th>Tytuł 2</th>
                 <th>Tytuł 3</th>
             </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td colspan="3">Komórka 3x1</td>
+                    <td><div class="boxModel">DEFAULT</div></td>
+                    <td><div class="boxModel" id="examplePadding">padding-left: 40pt;</div></td>
+                    <td><div class="boxModel" id="exampleBorder">border: 10pt solid gray;</div></td>
                 </tr>
                 <tr>
-                    <td style="text-align:right">&dollar;</td>
-                    <td rowspan="3" style="vertical-align:bottom">Komórka 1x3</td>
-                    <td>Komórka 3</td>
+                    <td><div class="boxModel" id="exampleMargin">margin: 20pt; margin-bottom: 40pt;</div></td>
+                    <td>Here is declared the absolute div.<div class="boxModel" id="examplePositionAbsolute">position: absolute; right: 80px;</div></td>
+                    <td><div class="boxModel" id="examplePositionRelative">position: relative; bottom: 20px;</div></td>
                 </tr>
                 <tr>
-                    <td style="text-align:center">&pound;</td>
-                    <td style="text-align:center">Komórka 3</td>
+                    <td><div class="boxModel" id="examplePositionStatic">position: static; left: 80px;</div></td>
+                    <td>Here is declared the fixed div.<div class="boxModel" id="examplePositionFixed">position: fixed; top: 80px;</div></td>
+                    <td><div class="boxModel2"><div class="boxModel">no float</div>Lorem ipsum dolor sit amet.</div></td>
                 </tr>
                 <tr>
-                    <td>&euro;</td>
-                    <td style="text-align:right">Komórka 3</td>
-                </tr>
-                <tr>
+                    <td><div class="boxModel2"><div class="boxModel" id="exampleFloatRight">float: right;</div>Lorem ipsum dolor sit amet.</div></td>
                     <td>
-                        <th>Test</th>
+                        <div class="boxModel" id="exampleFloatRight">float: right;</div>
+                        <div class="boxModel2" id="exampleClearRight">clear: right; Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</div>
                     </td>
-                    <td style="vertical-align:top">Komórka 2</td>
+                    <td>
+                        <div class="boxModel" id="exampleFloatRight">float: right;</div>
+                        <div class="boxModel2" id="exampleClearLeft">clear: left; Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td><div class="borderExample">Border Example</div></td>
+                    <td>Test</td>
+                    <td>Test</td>
                 </tr>
             </tbody>
         </table>

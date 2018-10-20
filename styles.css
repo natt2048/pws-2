@@ -47,3 +47,128 @@ article > p {
 p > span.redText {
     color: red;
 }
+
+/* ZADANIE 1.6*/
+th {
+    border-style: solid;
+}
+
+td {
+    border-style: solid;
+    height: 100pt;
+    width: 200pt;
+}
+
+div.boxModel {
+    height: 50pt;
+    width: 100pt;
+    background-color: #ff99cc;
+}
+
+#exampleMargin {
+    margin: 20pt;
+    margin-bottom: 40pt;
+}
+
+#examplePadding {
+    padding-left: 40pt;
+}
+
+#exampleBorder {
+    border: 10pt solid gray;
+}
+
+#examplePositionAbsolute {
+    position: absolute;
+    right: 80px;
+}
+
+#examplePositionRelative {
+    position: relative;
+    bottom: 20px;
+}
+
+#examplePositionStatic {
+    position: static;
+    left: 80px;
+}
+
+#examplePositionFixed {
+    position: fixed;
+    top: 80px;
+}
+
+#exampleFloatRight {
+    float: right;
+}
+
+div.boxModel2 {
+    border: 3pt dotted #336600;
+
+}
+
+#exampleClearRight {
+    clear: right;
+}
+
+#exampleClearLeft {
+    clear: left;
+}
+
+/* ZADANIE 1.7*/
+#exampleFontWeightBold {
+    font-weight: bold;
+}
+
+#exampleFontWeight1000 {
+/* 400 is the same as normal, and 700 is the same as bold */
+    font-weight: 1000;
+}
+
+#exampleFontStyleOblique {
+    font-style: oblique;
+}
+
+#exampleFontStyleNormal {
+    font-style: normal;
+}
+
+#exampleFontVariant {
+    font-variant: small-caps;
+}
+
+#exampleFontSize1 {
+    font-size: large;
+}
+
+#exampleFontSize2 {
+    font-size: 150%;
+}
+
+#exampleLineHeight1 {
+    line-height: 3.0;
+}
+
+#exampleLineHeight2 {
+    line-height: 50%;
+}
+
+#exampleFontFamily1 {
+    font-family: Helvetica, serif;
+}
+
+#exampleFontFamily2 {
+    font-family: fantasy, monospace;
+}
+
+/*ZADANIE 1.8*/
+div.borderExample {
+    border-width: 3px;
+    border-style: dashed;
+    border-color: #ff007f;
+}
+
+
+
+
+
