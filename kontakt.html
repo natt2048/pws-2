@@ -5,18 +5,40 @@
     <title>Kontakt</title>
     <meta name="description" content="Najlepsza kawiarnia w Nowej Soli. Duży wybór lodów, ciast i deserów.">
     <meta name="keywords" content="kawiarnia,kawa,ciasta,desery,czekolada,lody">
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body class="bodyDotted">
 
 <header>
     <div>
-        <span>Kontakt</span>
+        <span><a href="#contactSection">Kontakt</a></span>
+        <span><a href="#descriptionSection">Opis</a></span>
     </div>
 </header>
 
 <main>
     <div id="contact-page">
         <section>
+            <h2>Witaj!</h2>
+        </section>
+        <section id="descriptionSection">
+            <h2>Opis kawiarni</h2>
+            <p>
+                Najlepsza <span>kawiarnia</span> w mieście!<span></span>
+                <ul>
+                    <li>Kawa</li>
+                    <li>Herbata</li>
+                    <li>Ciastka</li>
+                </ul>
+            </p>
+            <p>
+                Dobra <span>lokalizacja!</span>
+            </p>
+            <p>
+                Znajdź nas: <a href="https://maps.google.com">Mapy <span>Google</span></a>
+            </p>
+        </section>
+        <section id="contactSection">
             <h2>Kontakt</h2>
             <ul>
                 <li>
@@ -30,6 +52,10 @@
                 <li>
                     <span>Adres:</span>
                     <span>Pl.&nbsp;Wyzwolenia&nbsp;10, Nowa&nbsp;Sól</span>
+                </li>
+                <li>
+                    <span>Facebook:</span>
+                    <span><a href="https://facebook.com">Cafe Wanilia</a></span>
                 </li>
             </ul>
             <h2>Godziny otwarcia</h2>
@@ -47,14 +73,15 @@
                     <span>12:00&nbsp;-&nbsp;18:00</span>
                 </li>
             </ul>
-            <form>
+            
+            <form id=kontakt>
                 <div>
                     <label for="imie">Imię</label>
-                    <input id="imie" type="text" name="imie">
+                    <input id="imie" type="text" name="imie" autofocus>
                 </div>
                 <div>
                     <label for="nazwisko">Nazwisko</label>
-                    <input id="nazwisko" type="text" name="nazwisko">
+                    <input id="nazwisko" type="text" name="nazwisko" required>
                 </div>
                 <div>
                     <label for="telefon">Telefon</label>
@@ -90,7 +117,7 @@
                 <div>
                     <fieldset>
                         <legend>Wybierz ulubione kolory:</legend>
-                        <input type="checkbox" id="czerwony" name="kolor" value="czerwony"/>
+                        <input type="checkbox" id="czerwony" name="kolor" value="czerwony" checked/>
                         <label for="czerwony">Czerwony</label>
                         <input type="checkbox" id="niebieski" name="kolor" value="niebieski"/>
                         <label for="niebieski">Niebieski</label>
@@ -102,7 +129,7 @@
                     <textarea rows="4" cols="50" maxlength="200" placeholder="Wpisz wiadomość"></textarea>
                 </div>
                 <button type="reset">Wyczyść</button>
-                <button type="submit">Wyślij</button>
+                <button type="submit" disabled>Wyślij</button>
             </form>
         </section>
     </div>

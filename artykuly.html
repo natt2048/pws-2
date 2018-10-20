@@ -5,37 +5,162 @@
     <title>Artykuły</title>
     <meta name="description" content="Najlepsza kawiarnia w Nowej Soli. Duży wybór lodów, ciast i deserów.">
     <meta name="keywords" content="kawiarnia,kawa,ciasta,desery,czekolada,lody">
+    <style>
+        #internalCSS {
+            background-color:yellow;
+            font-size:24px;
+        }
+    </style>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" media="screen and (max-width: 900px)" href="smallscreen.css">
 </head>
-<body>
+<body class="bodyRaspberry">
 
 <header>
     <div>
         <span>Artykuły</span>
     </div>
+    <div>
+        <span id="internalCSS">Internal CSS</span>
+        <span id="inlineCSS" style="color:blue;font-size:10px;">Inline CSS</span>
+    </div>
 </header>
+
+<nav>
+    <ul>
+        <li><a>Menu 1</a>
+          <ul>
+            <li><a>Menu 1.1</a>
+                <ul>
+                    <li><a>Opcja 1.1.1</a></li>
+                    <li><a>Opcja 1.1.2</a></li>
+                </ul>
+            </li>
+            <li><a>Menu 1.2</a>
+                <ul>
+                    <li><a>Opcja 1.2.1</a></li>
+                    <li><a>Opcja 1.2.2</a></li>
+                </ul>
+            </li>
+            <li><a>Opcja 1.3</a></li>
+          </ul>
+        </li>
+
+        <li><a>Menu 2</a>
+          <ul>
+            <li><a>Menu 2.1</a>
+                <ul>
+                    <li><a>Opcja 2.1.1</a></li>
+                    <li><a>Opcja 2.1.2</a></li>
+                </ul>
+            </li>
+            <li><a>Opcja 2.2</a></li>
+          </ul>
+        </li>
+        
+        <li><a>Menu 3</a>
+            <ul>
+                <li><a>Opcja 3.1</a></li>
+                <li><a>Opcja 3.2</a></li>
+            </ul>
+        </li>
+    </ul>
+</nav>
 
 <main>
     <section>
         <h2>Nasze artykuły</h2>
         <article>
             <h3>Cupcake Ipsum 1</h3>
-            <p>
-                Cupcake ipsum dolor sit amet jelly. Chocolate cake muffin carrot cake liquorice. Chocolate tart danish tiramisu topping. Chocolate tart cake fruitcake. Jujubes chocolate pastry pudding cake. Sweet jelly jelly. Muffin tootsie roll sugar plum macaroon cake topping danish. Danish bonbon lollipop oat cake. Jujubes cookie jelly-o pudding toffee cookie. Danish toffee chupa chups liquorice. Jelly-o bonbon jelly-o jelly-o muffin tootsie roll. Marzipan cookie chocolate wafer sesame snaps cake oat cake. Croissant bonbon sweet cotton candy.
+            <p id="textSizeEm">
+                [Text size 1.5em] Cupcake ipsum dolor sit amet jelly. Chocolate cake muffin carrot cake liquorice. Chocolate tart danish tiramisu topping. Chocolate tart cake fruitcake. Jujubes chocolate pastry pudding cake. Sweet jelly jelly. Muffin tootsie roll sugar plum macaroon cake topping danish. Danish bonbon lollipop oat cake. Jujubes cookie jelly-o pudding toffee cookie. Danish toffee chupa chups liquorice. Jelly-o bonbon jelly-o jelly-o muffin tootsie roll. Marzipan cookie chocolate wafer sesame snaps cake oat cake. Croissant bonbon sweet cotton candy.
             </p>
-            <p>
-                Muffin chupa chups pudding bear claw chupa chups gummi bears sweet roll icing. Tootsie roll dessert gingerbread chupa chups cake cupcake pie. Cheesecake caramels tiramisu pastry. Cake soufflé sugar plum liquorice cookie bonbon candy canes sesame snaps bonbon. Lemon drops brownie gummi bears donut. Gingerbread cheesecake tart apple pie topping jelly-o brownie jelly tootsie roll. Toffee sesame snaps sweet roll jelly danish liquorice marzipan. Muffin fruitcake gummies candy. Lemon drops pudding tart gingerbread apple pie cupcake toffee. Marshmallow danish cheesecake chocolate biscuit. Topping cookie jelly beans lemon drops. Bear claw sweet candy canes. Chupa chups cotton candy croissant gummies liquorice. Candy chupa chups biscuit powder cake pudding croissant bonbon.
+            <p id="textSizePx">
+                [Text size 10 px] Muffin chupa chups pudding bear claw chupa chups gummi bears sweet roll icing. Tootsie roll dessert gingerbread chupa chups cake cupcake pie. Cheesecake caramels tiramisu pastry. Cake soufflé sugar plum liquorice cookie bonbon candy canes sesame snaps bonbon. Lemon drops brownie gummi bears donut. Gingerbread cheesecake tart apple pie topping jelly-o brownie jelly tootsie roll. Toffee sesame snaps sweet roll jelly danish liquorice marzipan. Muffin fruitcake gummies candy. Lemon drops pudding tart gingerbread apple pie cupcake toffee. Marshmallow danish cheesecake chocolate biscuit. <span class="redText">Topping cookie jelly beans</span> lemon drops. Bear claw sweet candy canes. Chupa chups cotton candy croissant gummies liquorice. Candy chupa chups biscuit powder cake pudding croissant bonbon.
             </p>
         </article>
         <article>
             <h3>Cupcake Ipsum 2</h3>
-            <p>
-                Brownie apple pie jelly beans icing danish. Sweet cotton candy macaroon brownie gummies chocolate cake danish chocolate tart. Cheesecake soufflé carrot cake tootsie roll cheesecake. Halvah jelly oat cake dragée bear claw. Donut apple pie caramels candy croissant soufflé sugar plum. Sugar plum topping bonbon ice cream gummi bears pie dragée. Dragée donut tootsie roll candy halvah croissant muffin. Chocolate tart danish cotton candy. Brownie donut pudding wafer sesame snaps. Marzipan candy canes dessert pudding danish. Marzipan caramels apple pie chocolate marzipan gummi bears pastry topping. Tart chocolate bar muffin pudding chocolate.
+            <p id="textSizePt">
+                [Text size 14 points]Brownie apple pie jelly beans icing danish. Sweet cotton candy macaroon brownie gummies chocolate cake danish chocolate tart. Cheesecake soufflé carrot cake tootsie roll cheesecake. Halvah jelly oat cake dragée bear claw. Donut apple pie caramels candy croissant soufflé sugar plum. Sugar plum topping bonbon ice cream gummi bears pie dragée. Dragée donut tootsie roll candy halvah croissant muffin. Chocolate tart danish cotton candy. Brownie donut pudding wafer sesame snaps. Marzipan candy canes dessert pudding danish. Marzipan caramels apple pie chocolate marzipan gummi bears pastry topping. Tart chocolate bar muffin pudding chocolate.
+            </p>
+            <p id="textSizePercent">
+                [Text size 82%] Caramels chocolate bar topping jelly sweet roll lollipop. Chupa chups pastry sweet roll jelly dragée cupcake jujubes. Sesame snaps jelly cake wafer. Pastry pie pie fruitcake tart <span  class="redText">lemon drops</span> sugar plum pudding gingerbread. Candy pudding muffin biscuit lemon drops dragée carrot cake. Marzipan tart chupa chups jelly-o apple pie powder gingerbread sweet wafer. <span  class="redText">Sweet roll</span> lollipop sugar plum gummi bears. Cake fruitcake sweet roll sweet marshmallow macaroon candy canes candy. Apple pie cake jelly apple pie oat cake. Chocolate cake bear claw tiramisu dessert jujubes pastry apple pie bonbon. Croissant chocolate gummies sweet fruitcake jelly-o oat cake. Sesame snaps tootsie roll topping sweet roll gummi bears.
             </p>
             <p>
-                Caramels chocolate bar topping jelly sweet roll lollipop. Chupa chups pastry sweet roll jelly dragée cupcake jujubes. Sesame snaps jelly cake wafer. Pastry pie pie fruitcake tart lemon drops sugar plum pudding gingerbread. Candy pudding muffin biscuit lemon drops dragée carrot cake. Marzipan tart chupa chups jelly-o apple pie powder gingerbread sweet wafer. Sweet roll lollipop sugar plum gummi bears. Cake fruitcake sweet roll sweet marshmallow macaroon candy canes candy. Apple pie cake jelly apple pie oat cake. Chocolate cake bear claw tiramisu dessert jujubes pastry apple pie bonbon. Croissant chocolate gummies sweet fruitcake jelly-o oat cake. Sesame snaps tootsie roll topping sweet roll gummi bears.
+                [Normalny rozmiar tekstu] Topping cake tiramisu chocolate bar. Dragée bonbon powder ice cream halvah gummi bears. Biscuit macaroon gingerbread chocolate bar bear claw. Powder muffin cotton candy lollipop jelly-o chupa chups pudding gingerbread. Jelly beans cookie jujubes sweet halvah pudding carrot cake. Cookie icing icing cotton candy marzipan chocolate chocolate chocolate cake. Jujubes jujubes wafer bonbon. Sweet roll jelly marshmallow marshmallow sesame snaps. Croissant macaroon cookie topping apple pie gummi bears. Topping chocolate bar jelly icing sweet. Muffin gummi bears marzipan. Chocolate bar dragée apple pie muffin tootsie roll cotton candy.
             </p>
-            <p>
-                Topping cake tiramisu chocolate bar. Dragée bonbon powder ice cream halvah gummi bears. Biscuit macaroon gingerbread chocolate bar bear claw. Powder muffin cotton candy lollipop jelly-o chupa chups pudding gingerbread. Jelly beans cookie jujubes sweet halvah pudding carrot cake. Cookie icing icing cotton candy marzipan chocolate chocolate chocolate cake. Jujubes jujubes wafer bonbon. Sweet roll jelly marshmallow marshmallow sesame snaps. Croissant macaroon cookie topping apple pie gummi bears. Topping chocolate bar jelly icing sweet. Muffin gummi bears marzipan. Chocolate bar dragée apple pie muffin tootsie roll cotton candy.
+        </article>
+        <article>
+            <h3>Testy czcionek</h3>
+            <p id="exampleFontWeightBold">
+                Cupcake ipsum dolor sit amet jelly. font-weight: bold;
+            </p>
+            <p id="exampleFontWeight700">
+                Cupcake ipsum dolor sit amet jelly. font-weight: 700;
+            </p>
+            <p id="exampleFontStyleOblique">
+                Cupcake ipsum dolor sit amet jelly. font-style: oblique;
+            </p>
+            <p id="exampleFontStyleNormal">
+                Cupcake ipsum dolor sit amet jelly. font-style: normal;
+            </p>
+            <p id="exampleFontVariant">
+                Cupcake ipsum dolor sit amet jelly. font-variant: small-caps;
+            </p>
+            <p id="exampleFontSize1">
+                Cupcake ipsum dolor sit amet jelly. font-size: large;
+            </p>
+            <p id="exampleFontSize2">
+                Cupcake ipsum dolor sit amet jelly. font-size: 150%;
+            </p>
+            <p id="exampleLineHeight1">
+                Cupcake ipsum dolor sit amet jelly. line-height: 3.0;
+            </p>
+            <p id="exampleLineHeight2">
+                Cupcake ipsum dolor sit amet jelly. line-height: 50%;
+            </p>
+            <p id="exampleFontFamily1">
+                Cupcake ipsum dolor sit amet jelly. font-family: Helvetica, serif;
+            </p>
+            <p id="exampleFontFamily2">
+                Cupcake ipsum dolor sit amet jelly. font-family: fantasy, monospace;
+            </p>
+        </article>
+        <article>
+            <h3>Testy reguł CSS wykorzystujących wartości atrybutów znaczników HTML</h3>
+            <p title="Cupcakes">
+                Cupcake ipsum dolor sit amet jelly.
+            </p>
+            <p title="Candies">
+                Cupcake ipsum dolor sit amet jelly.
+            </p>
+            <p title="Candies">
+                Cupcake ipsum dolor sit amet jelly.
+            </p>                                   
+            <p>                                    
+                <a href="https://google.com/">Cupcake ipsum dolor sit amet jelly.</a>
+            </p>                                   
+            <p title="Muffins">                    
+                <a href="https://truffle-assets.imgix.net/ea8a92ad-unicorn-frappuccino-cupcakes-pc.jpg" target="_blank">Cupcake</a> ipsum dolor sit amet jelly.
+            </p>                                   
+            <p>             
+                <a href="https://kotlet.tv/">Cupcake ipsum dolor sit amet jelly.</a>
+            </p>                                   
+            <p>                                    
+                Cupcake ipsum dolor sit amet jelly.
+            </p>                                   
+            <p title="Cupcakes">                   
+                <a href="https://google.com/">Cupcake ipsum dolor sit amet jelly.</a>
+            </p>                                   
+            <p>                                    
+                Cupcake ipsum dolor sit amet jelly.
+            </p>                                   
+            <p>                                    
+                <a href="https://goo.gl/WXLuAU" target="_blank">Cupcake</a> ipsum dolor sit amet jelly.
+            </p>                                   
+            <p>                                    
+                Cupcake ipsum dolor sit amet jelly.
             </p>
         </article>
     </section>

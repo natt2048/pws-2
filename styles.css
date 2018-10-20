@@ -1,0 +1,364 @@
+html {
+    margin: 0;
+    height: 100%;
+}
+
+/* ZADANIE 1.3*/
+#textSizeEm {
+    font-size: 1.5em;
+}
+
+#textSizePx {
+    font-size: 10px;
+}
+
+#textSizePt {
+    font-size: 14pt;
+}
+
+#textSizePercent {
+    font-size: 82%;
+}
+
+/* ZADANIE 1.4*/
+.bodyRaspberry {
+    background-image: url("images/raspberry.jpg");
+    background-repeat: repeat-x;
+    background-attachment: fixed;
+    background-position: left bottom;
+    background-size: 20% 5%;
+}
+
+.bodyGradient {
+    background: linear-gradient(50deg, #ebebeb 50%, #fff 50%) no-repeat; 
+}
+
+.bodyDotted {
+    background-color: #ffffcc;
+    border: 10px dotted black;
+    padding: 15px;
+}
+
+/* ZADANIE 1.5*/
+article > p {
+    border: 2px dotted black;
+}
+
+p > span.redText {
+    color: red;
+}
+
+/* ZADANIE 1.6*/
+#boxModelTable th {
+    border-style: solid;
+}
+
+#boxModelTable td {
+    border-style: solid;
+    height: 100pt;
+    width: 200pt;
+}
+
+div.boxModel {
+    height: 50pt;
+    width: 100pt;
+    background-color: #ff99cc;
+}
+
+#exampleMargin {
+    margin: 20pt;
+    margin-bottom: 40pt;
+}
+
+#examplePadding {
+    padding-left: 40pt;
+}
+
+#exampleBorder {
+    border: 10pt solid gray;
+}
+
+#examplePositionAbsolute {
+    position: absolute;
+    right: 80px;
+}
+
+#examplePositionRelative {
+    position: relative;
+    bottom: 20px;
+}
+
+#examplePositionStatic {
+    position: static;
+    left: 80px;
+}
+
+#examplePositionFixed {
+    position: fixed;
+    top: 80px;
+}
+
+#exampleFloatRight {
+    float: right;
+}
+
+div.boxModel2 {
+    border: 3pt dotted #336600;
+
+}
+
+#exampleClearRight {
+    clear: right;
+}
+
+#exampleClearLeft {
+    clear: left;
+}
+
+/* ZADANIE 1.7*/
+#exampleFontWeightBold {
+    font-weight: bold;
+}
+
+#exampleFontWeight700 {
+/* 400 is the same as normal, and 700 is the same as bold */
+    font-weight: 700;
+}
+
+#exampleFontStyleOblique {
+    font-style: oblique;
+}
+
+#exampleFontStyleNormal {
+    font-style: normal;
+}
+
+#exampleFontVariant {
+    font-variant: small-caps;
+}
+
+#exampleFontSize1 {
+    font-size: large;
+}
+
+#exampleFontSize2 {
+    font-size: 150%;
+}
+
+#exampleLineHeight1 {
+    line-height: 3.0;
+}
+
+#exampleLineHeight2 {
+    line-height: 50%;
+}
+
+#exampleFontFamily1 {
+    font-family: Helvetica, serif;
+}
+
+#exampleFontFamily2 {
+    font-family: fantasy, monospace;
+}
+
+/*ZADANIE 1.8*/
+div.borderExample {
+    border-width: 3px;
+    border-style: dashed;
+    border-color: #ff007f;
+}
+
+/*ZADANIE 1.9*/
+#styleTable {
+    border-collapse: collapse;
+    width: 80%;
+}
+
+#styleTable, #styleTable th {
+    border: 1px solid black;
+}
+#styleTable td {
+    border-right: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+}
+
+#styleTable th {
+    height: 60px;
+    background-color: #336600;
+    color: white;
+}
+
+#styleTable td {
+    height: 30px;
+}
+
+#styleTable td.textAlignRight {
+    text-align: right;
+}
+
+#styleTable td.textAlignCenter {
+    text-align: center;
+}
+
+#styleTable td.verticalAlignTop {
+    vertical-align: top;
+}
+
+#styleTable td.verticalAlignBottom {
+    vertical-align: bottom;
+}
+
+#styleTable td.withPadding {
+    padding: 20px;
+}
+
+#styleTable tr:nth-child(even) {
+    background-color: #ff99cc;
+}
+
+#styleTable tr:hover {
+    background-color: #ff99cc;
+}
+
+/*ZADANIE 1.10*/
+p[title] {
+    font-size: 140%;
+}
+
+p[title="Cupcakes"] {
+    color: #ff99cc;
+}
+
+a[href="https://google.com/"] {
+    font-variant: small-caps;
+}
+
+a[href="https://goo.gl/WXLuAU"][target="_blank"] {
+    font-weight: bold;
+}
+
+/*ZADANIE 1.11*/
+@media screen and (orientation: portrait) {
+    body {
+        width: 50%;
+    }
+}
+
+/*ZADANIE 1.12*/
+a:link {
+    color: #336600;
+}
+
+a:visited {
+    color: #00FF00;
+}
+
+a:hover {
+    color: #ff00cc;
+}
+
+a:active {
+    background-color: #0000FF;
+}
+
+#contactSection li:nth-child(2) {
+    color: #ff99cc;
+}
+
+#contactSection li:first-child {
+    font-size: 130%;
+}
+
+#contactSection li:last-child {
+    font-size: 80%;
+}
+
+#contactSection li:nth-last-child(2) {
+    background-color: #eee;
+}
+
+input:checked + label {
+    background-color: red; 
+}
+
+button:disabled {
+    color: #bbb;
+}
+
+button:enabled {
+    color: #00cccc;
+}
+
+span:empty:before {
+    content: "pusty span";
+    font-style:italic;
+}
+
+@page :first {
+/*first page while printing*/
+    margin-left: 50%;
+    margin-top: 50%;
+}
+
+#descriptionSection p:last-of-type {
+    margin-left: 50px;
+    color: red;
+}
+
+input:focus {
+    background-color: yellow;
+}
+
+h2:only-child {
+    color: #ddd;
+}
+
+input:required {
+    background-color: red;
+}
+
+#descriptionSection :not(h2) {
+    color: blue;
+}
+
+:target {
+    border: dashed;
+}
+
+/*ZADANIE 1.13*/
+nav {
+    height: 50pt;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+    position: absolute;
+}
+
+nav > ul > li {
+    float: left;
+}
+
+nav ul li a {
+    display: block;
+    padding: 16px 20px;
+    width: 100px;
+    text-decoration: none;
+    background-color: #ccc;
+    border: solid 1px white;
+}
+
+nav ul li a:hover{
+    background: #ff99cc;
+    color: #000;
+}
+
+nav ul ul {
+    display: none;
+}
+
+nav ul li:hover > ul {
+    list-style-type: none;
+    display: block;
+}
