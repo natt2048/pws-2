@@ -120,9 +120,9 @@ div.boxModel2 {
     font-weight: bold;
 }
 
-#exampleFontWeight1000 {
+#exampleFontWeight700 {
 /* 400 is the same as normal, and 700 is the same as bold */
-    font-weight: 1000;
+    font-weight: 700;
 }
 
 #exampleFontStyleOblique {
@@ -235,8 +235,14 @@ a[href="https://google.com/"] {
 
 a[href="https://goo.gl/WXLuAU"][target="_blank"] {
     font-weight: bold;
+}
 
-
+/*ZADANIE 1.11*/
+@media screen and (orientation: portrait) {
+    body {
+        width: 50%;
+    }
+}
 
 
 
