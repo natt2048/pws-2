@@ -265,15 +265,15 @@ a:active {
     color: #ff99cc;
 }
 
-li:first-child {
+#contactSection li:first-child {
     font-size: 130%;
 }
 
-li:last-child {
+#contactSection li:last-child {
     font-size: 80%;
 }
 
-li:nth-last-child(2) {
+#contactSection li:nth-last-child(2) {
     background-color: #eee;
 }
 
@@ -325,13 +325,40 @@ input:required {
     border: dashed;
 }
 
+/*ZADANIE 1.13*/
+nav {
+    height: 50pt;
+}
 
+nav ul {
+    list-style-type: none;
+    text-align: center;
+    position: absolute;
+}
 
+nav > ul > li {
+    float: left;
+}
 
+nav ul li a {
+    display: block;
+    padding: 16px 20px;
+    width: 100px;
+    text-decoration: none;
+    background-color: #ccc;
+    border: solid 1px white;
+}
 
+nav ul li a:hover{
+    background: #ff99cc;
+    color: #000;
+}
 
+nav ul ul {
+    display: none;
+}
 
-
-
-
-
+nav ul li:hover > ul {
+    list-style-type: none;
+    display: block;
+}
