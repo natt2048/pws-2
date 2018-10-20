@@ -220,6 +220,30 @@ div.borderExample {
     background-color: #ff99cc;
 }
 
+/*ZADANIE 1.10*/
+p[title] {
+    font-size: 140%;
+}
+
+p[title="Cupcakes"] {
+    color: #ff99cc;
+}
+
+a[href="https://google.com/"] {
+    font-variant: small-caps;
+}
+
+a[href="https://goo.gl/WXLuAU"][target="_blank"] {
+    font-weight: bold;
+
+
+
+
+
+
+
+
+
 
 
 
