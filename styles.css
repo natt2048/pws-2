@@ -213,7 +213,7 @@ div.borderExample {
 }
 
 #styleTable tr:nth-child(even) {
-    background-color: #f2f2f2;
+    background-color: #ff99cc;
 }
 
 #styleTable tr:hover {
@@ -242,6 +242,87 @@ a[href="https://goo.gl/WXLuAU"][target="_blank"] {
     body {
         width: 50%;
     }
+}
+
+/*ZADANIE 1.12*/
+a:link {
+    color: #336600;
+}
+
+a:visited {
+    color: #00FF00;
+}
+
+a:hover {
+    color: #ff00cc;
+}
+
+a:active {
+    background-color: #0000FF;
+}
+
+#contactSection li:nth-child(2) {
+    color: #ff99cc;
+}
+
+li:first-child {
+    font-size: 130%;
+}
+
+li:last-child {
+    font-size: 80%;
+}
+
+li:nth-last-child(2) {
+    background-color: #eee;
+}
+
+input:checked + label {
+    background-color: red; 
+}
+
+button:disabled {
+    color: #bbb;
+}
+
+button:enabled {
+    color: #00cccc;
+}
+
+span:empty:before {
+    content: "pusty span";
+    font-style:italic;
+}
+
+@page :first {
+/*first page while printing*/
+    margin-left: 50%;
+    margin-top: 50%;
+}
+
+#descriptionSection p:last-of-type {
+    margin-left: 50px;
+    color: red;
+}
+
+input:focus {
+    background-color: yellow;
+}
+
+h2:only-child {
+    color: #ddd;
+}
+
+input:required {
+    background-color: red;
+}
+
+#descriptionSection :not(h2) {
+    color: blue;
+}
+
+:target {
+    border: dashed;
 }
 
 
