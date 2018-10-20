@@ -5,147 +5,7 @@
     <title>Przepisy</title>
     <meta name="description" content="Najlepsza kawiarnia w Nowej Soli. Duży wybór lodów, ciast i deserów.">
     <meta name="keywords" content="kawiarnia,kawa,ciasta,desery,czekolada,lody">
-    <style>
-        /* latin */
-        @font-face {
-            font-family: 'Tangerine';
-            font-style: normal;
-            font-weight: 400;
-            src: local('Tangerine Regular'), local('Tangerine-Regular'), url(https://fonts.gstatic.com/s/tangerine/v9/IurY6Y5j_oScZZow4VOxCZZM.woff2) format('woff2');
-        }
-
-        header {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background: url("images/background2.jpg");
-            background-position: center;
-            min-height: 200px;
-            color: black;
-            text-shadow: 2px 15px 10px blue;
-            font-size: 2em;
-            font-family: "Tangerine", sans-serif;
-        }
-
-        .special-header {
-            text-shadow: darkred 1px 1px 2px;
-            text-align: center;
-        }
-
-        .advices {
-            display: block;
-        }
-
-        /*
-        png jest bezstratny, jpg też można wstawić bez utraty, ale domyślnie są ustawione na stratę, png ma tło przeźroczyste,
-        kiedy kontrasty są duże to png,
-        */
-
-        img.logo {
-            width: 200px;
-            height: 200px;
-            border-radius: 50%;
-        }
-
-        .flex-boxes {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-        }
-
-        .flex-boxes .box {
-            margin: 10px;
-            padding-top: 10px;
-            text-align: center;
-            justify-content: center;
-            flex: 1;
-            overflow: auto;
-            min-width: 100px;
-        }
-
-        .box:hover {
-            flex-grow: 1.5;
-        }
-
-        .box:nth-child(odd):hover {
-            background-color: hsla(0, 24%, 34%, 0.91);
-        }
-
-        .box:nth-child(2n):hover {
-            background-color: hsla(0, 24%, 34%, 0.91);
-        }
-
-        .box:last-child:hover {
-            background-color: rgba(41, 96, 133, 0.91);
-        }
-
-        .radius-example {
-            margin: 0 auto;
-            width: 30%;
-            height: 30%;
-            background-color: aquamarine;
-        }
-
-        .box:first-child:hover {
-            background-color: hsla(328, 100%, 78%, 0.91);
-        }
-
-        .radius-1 {
-            border-radius: 10px 20px 40px 80px;
-        }
-
-        .radius-2 {
-            border-radius: 10px 40px 80px;
-        }
-
-        .radius-3 {
-            border-radius: 10px 30px;
-        }
-
-        .radius-4 {
-            border-radius: 70%;
-        }
-
-        .radius-5 {
-            border-radius: 30%;
-        }
-
-        .column-boxes {
-            -webkit-column-count: 3;
-            -moz-column-count: 3;
-            column-count: 3;
-            -webkit-column-gap: 40px; /* Chrome, Safari, Opera */
-            -moz-column-gap: 40px; /* Firefox */
-            column-gap: 40px;
-            -webkit-column-rule: 10px dotted #ff00ff; /* Chrome, Safari, Opera */
-            -moz-column-rule: 10px dotted #ff00ff; /* Firefox */
-            column-rule: 10px dotted #ff00ff;
-        }
-
-        @media screen and (max-width: 768px) {
-            .column-boxes {
-                -webkit-column-count: 2;
-                -moz-column-count: 2;
-                column-count: 2;
-            }
-        }
-
-        @media screen and (max-width: 400px) {
-            .column-boxes {
-                -webkit-column-count: 1;
-                -moz-column-count: 1;
-                column-count: 1;
-            }
-        }
-
-        .column-boxes .box {
-            text-align: center;
-        }
-
-        .main-section > a:visited {
-            color: green;
-        }
-    </style>
+    <link href="css/przepisy.css" type="text/css" rel="stylesheet">
 </head>
 <body>
 
@@ -165,9 +25,18 @@
             <li><a href="http://kotlet.tv/bezglutenowe-ciasto-czekoladowe-na-majonezie/">Ciasto czekoladowe</a></li>
         </ul>
     </section>
+    <section class="background-images">
+        <h2>Obrazki w tle</h2>
+    </section>
+    <section class="background-images2">
+        <h2>Obrazki w tle ciąg dalszy</h2>
+        <div class="back-img back-img1"></div>
+        <div class="back-img back-img2"></div>
+        <div class="back-img back-img3"></div>
+    </section>
     <section class="advices">
         <h2 class="special-header">Porady flexowe</h2>
-        <div class="flex-boxes">
+        <div class="flex-boxes boxes">
             <div class="box">
                 <div class="radius-example radius-1">1</div>
                 <p>
@@ -254,7 +123,7 @@
         <h2 id="columns-corner" class="special-header">
             Kącik kolumn
         </h2>
-        <div class="column-boxes">
+        <div class="column-boxes boxes">
             <div class="box">
                 <img class="logo" src="images/local/place1.jpg" alt="logo">
                 <p>
