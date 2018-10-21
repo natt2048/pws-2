@@ -1,0 +1,341 @@
+/*5. gradienty liniowe i radialne*/
+.gradient {
+    height: 200px;
+    margin: 40px 0;
+}
+
+.gradient1 {
+    background-image: linear-gradient(hsl(0, 100%, 50%), hsl(240, 100%, 25%));
+}
+
+.gradient2 {
+    background-image: linear-gradient(to right top, hsl(0, 100%, 50%), hsl(240, 100%, 25%));
+}
+
+.gradient3 {
+    background-image: linear-gradient(0deg, hsl(0, 100%, 50%), hsl(240, 100%, 25%) 30%, hsl(0, 0%, 0%));
+}
+
+.gradient4 {
+    background-image: repeating-linear-gradient(hsl(0, 100%, 50%), hsl(240, 100%, 25%) 20%, hsl(0, 0%, 0%) 40%);
+}
+
+.gradient6 {
+    background-image: radial-gradient(hsl(0, 100%, 50%) 15%, hsl(240, 100%, 25%) 25%, hsl(0, 0%, 0%) 50%);
+}
+
+.gradient7 {
+    background-image: radial-gradient(circle, hsl(0, 100%, 50%), hsl(240, 100%, 25%), hsl(0, 0%, 0%));
+}
+
+.gradient8 {
+    background-image: radial-gradient(circle, #000, #000 30%, #fff 40%, #000 40%);
+}
+
+/*7. obrazkowe obwódki - border-image-source, border-image-slice, border-image-repeat*/
+.small-image {
+    width: 17vw;
+}
+
+#small-image1 {
+    border: 40px solid transparent;
+    border-image-source: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/652/hearts-border-image.png);
+    border-image-slice: 20 22;
+    border-image-repeat: round;
+}
+
+#small-image2 {
+    border: 40px solid transparent;
+    border-image-source: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/652/hearts-border-image.png);
+    border-image-slice: 20 22;
+    border-image-repeat: stretch;
+}
+
+#small-image3 {
+    border: 40px solid transparent;
+    border-image-source: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/652/hearts-border-image.png);
+    border-image-slice: 20 22;
+    border-image-repeat: repeat;
+}
+
+#small-image4 {
+    border: 40px solid transparent;
+    border-image-source: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/652/pink-doily-bdr.png");
+    border-image-slice: 30;
+    border-image-repeat: stretch;
+}
+
+#small-image5 {
+    border: 40px solid transparent;
+    border-image-source: url("../images/logo.jpg");
+    border-image-slice: 100 100;
+    border-image-repeat: round;
+}
+
+/*8. Animation, @keyframes*/
+#small-image1 {
+    -webkit-animation-duration: 3s;
+    -moz-animation-duration: 3s;
+    -o-animation-duration: 3s;
+    animation-duration: 3s;
+    -webkit-animation-name: slidein;
+    -moz-animation-name: slidein;
+    -o-animation-name: slidein;
+    animation-name: slidein;
+}
+
+@-moz-keyframes slidein {
+    from {
+        margin-left: 100%;
+        width: 50%;
+    }
+
+    to {
+        margin-left: 0;
+        width: 17vw;
+    }
+}
+
+@-webkit-keyframes slidein {
+    from {
+        margin-left: 100%;
+        width: 50%;
+    }
+
+    to {
+        margin-left: 0;
+        width: 17vw;
+    }
+}
+
+@-o-keyframes slidein {
+    from {
+        margin-left: 100%;
+        width: 50%;
+    }
+
+    to {
+        margin-left: 0;
+        width: 17vw;
+    }
+}
+
+@-ms-keyframes slidein {
+    from {
+        margin-left: 100%;
+        width: 50%;
+    }
+
+    to {
+        margin-left: 0;
+        width: 17vw;
+    }
+}
+
+@keyframes slidein {
+    from {
+        margin-left: 100%;
+        width: 50%;
+    }
+
+    to {
+        margin-left: 0;
+        width: 17vw;
+    }
+}
+
+#kostki {
+    margin: 100px 0;
+    -webkit-animation-duration: 3s;
+    -moz-animation-duration: 3s;
+    -o-animation-duration: 3s;
+    animation-duration: 3s;
+    -webkit-animation-name: turlanie;
+    -moz-animation-name: turlanie;
+    -o-animation-name: turlanie;
+    animation-name: turlanie;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    -o-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    -moz-animation-direction: alternate;
+    -o-animation-direction: alternate;
+    animation-direction: alternate;
+    -webkit-animation-delay: 3s;
+    -moz-animation-delay: 3s;
+    -o-animation-delay: 3s;
+    animation-delay: 3s;
+}
+
+@-moz-keyframes turlanie {
+    100% {
+        -moz-transform: rotate(360deg);
+        margin-left: 50%;
+    }
+}
+
+@-webkit-keyframes turlanie {
+    100% {
+        -webkit-transform: rotate(360deg);
+        margin-left: 50%;
+    }
+}
+
+@-o-keyframes turlanie {
+    100% {
+        -o-transform: rotate(360deg);
+        margin-left: 50%;
+    }
+}
+
+@-ms-keyframes turlanie {
+    100% {
+        -ms-transform: rotate(360deg);
+        margin-left: 50%;
+    }
+}
+
+@keyframes turlanie {
+    100% {
+        transform: rotate(360deg);
+        margin-left: 50%;
+    }
+}
+
+#page-title {
+    display: block;
+    padding: 50px 100px;
+    background-color: cadetblue;
+    position: absolute;
+    top: 0;
+    right: calc(100% - 340px);
+
+    -webkit-animation-name: color-change;
+    -moz-animation-name: color-change;
+    -o-animation-name: color-change;
+    animation-name: color-change;
+    -webkit-animation-duration: 4s;
+    -moz-animation-duration: 4s;
+    -o-animation-duration: 4s;
+    animation-duration: 4s;
+    -webkit-animation-delay: 1s;
+    -moz-animation-delay: 1s;
+    -o-animation-delay: 1s;
+    animation-delay: 1s;
+}
+
+nav {
+    margin-top: 150px;
+}
+
+@keyframes color-change {
+    from {
+        background-color: aliceblue;
+    }
+    30% {
+        background-color: lightpink;
+    }
+    50% {
+        right: 0;
+        margin-top: 200px;
+    }
+    65% {
+        background-color: darkred;
+    }
+    100% {
+        background-color: black;
+        color: aliceblue;
+        right: calc(100% - 340px);
+        margin-top: 0;
+    }
+}
+
+/*8. transition i transform*/
+.squares {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 70px 0;
+}
+
+.square, .square2 {
+    width: 200px;
+    height: 200px;
+    background-color: aquamarine;
+}
+
+.squares .square {
+    -webkit-transition: width 2s, height 2s, transform 2s, background-color 3s;
+    -moz-transition: width 2s, height 2s, transform 2s, background-color 3s;
+    -ms-transition: width 2s, height 2s, transform 2s, background-color 3s;
+    -o-transition: width 2s, height 2s, transform 2s, background-color 3s;
+    transition: width 2s, height 2s, transform 2s, background-color 3s;
+}
+
+.squares:hover .square {
+    width: 400px;
+    background-color: grey;
+    height: 400px;
+    -webkit-transform: rotate(-180deg);
+    -moz-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    -o-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+}
+
+.square2:first-child {
+    -webkit-transition: width 3s;
+    -moz-transition: width 3s;
+    -ms-transition: width 3s;
+    -o-transition: width 3s;
+    transition: width 3s;
+    -webkit-transition-timing-function: ease-out;
+    -moz-transition-timing-function: ease-out;
+    -ms-transition-timing-function: ease-out;
+    -o-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+.square2:first-child:hover {
+    width: 800px;
+}
+
+.translate .square {
+    width: 40px;
+    height: 40px;
+    margin: 20px 0;
+
+}
+
+.translate:hover .square {
+    -webkit-transform: translateX(500px) scale(3) skewX(20deg);
+    -moz-transform: translateX(500px) scale(3) skewX(20deg);
+    -ms-transform: translateX(500px) scale(3) skewX(20deg);
+    -o-transform: translateX(500px) scale(3) skewX(20deg);
+    transform: translateX(500px) scale(3) skewX(20deg);
+}
+
+.translate .square1 {
+    -webkit-transition: all 3s ease-in-out;
+    -moz-transition: all 3s ease-in-out;
+    -ms-transition: all 3s ease-in-out;
+    -o-transition: all 3s ease-in-out;
+    transition: all 3s ease-in-out;
+}
+
+.translate .square2 {
+    -webkit-transition: all 2s ease;
+    -moz-transition: all 2s ease;
+    -ms-transition: all 2s ease;
+    -o-transition: all 2s ease;
+    transition: all 2s ease;
+}
+
+.translate .square3 {
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+}
