@@ -5,23 +5,19 @@
 }
 
 .gradient1 {
-    background: linear-gradient(hsl(0, 100%, 50%), hsl(240, 100%, 25%));
+    background-image: linear-gradient(hsl(0, 100%, 50%), hsl(240, 100%, 25%));
 }
 
 .gradient2 {
-    background: linear-gradient(to right top, hsl(0, 100%, 50%), hsl(240, 100%, 25%));
+    background-image: linear-gradient(to right top, hsl(0, 100%, 50%), hsl(240, 100%, 25%));
 }
 
 .gradient3 {
-    background: linear-gradient(0deg, hsl(0, 100%, 50%), hsl(240, 100%, 25%) 30%, hsl(0, 0%, 0%));
+    background-image: linear-gradient(0deg, hsl(0, 100%, 50%), hsl(240, 100%, 25%) 30%, hsl(0, 0%, 0%));
 }
 
 .gradient4 {
-    background: repeating-linear-gradient(hsl(0, 100%, 50%), hsl(240, 100%, 25%) 20%, hsl(0, 0%, 0%) 40%);
-}
-
-.gradient5 {
-    background-image: repeating-linear-gradient(45deg, hsl(0, 100%, 50%), hsl(0, 100%, 50%) 20px, black 20px, black 40px);
+    background-image: repeating-linear-gradient(hsl(0, 100%, 50%), hsl(240, 100%, 25%) 20%, hsl(0, 0%, 0%) 40%);
 }
 
 .gradient6 {
@@ -33,7 +29,7 @@
 }
 
 .gradient8 {
-    background: radial-gradient(circle, #000, #000 30%, #fff 40%, #000 40%);
+    background-image: radial-gradient(circle, #000, #000 30%, #fff 40%, #000 40%);
 }
 
 /*7. obrazkowe obwódki - border-image-source, border-image-slice, border-image-repeat*/
@@ -71,15 +67,69 @@
 
 #small-image5 {
     border: 40px solid transparent;
-    border-image-source: url("images/logo.jpg");
+    border-image-source: url("../images/logo.jpg");
     border-image-slice: 100 100;
     border-image-repeat: round;
 }
 
 /*8. Animation, @keyframes*/
 #small-image1 {
+    -webkit-animation-duration: 3s;
+    -moz-animation-duration: 3s;
+    -o-animation-duration: 3s;
     animation-duration: 3s;
+    -webkit-animation-name: slidein;
+    -moz-animation-name: slidein;
+    -o-animation-name: slidein;
     animation-name: slidein;
+}
+
+@-moz-keyframes slidein {
+    from {
+        margin-left: 100%;
+        width: 50%;
+    }
+
+    to {
+        margin-left: 0;
+        width: 17vw;
+    }
+}
+
+@-webkit-keyframes slidein {
+    from {
+        margin-left: 100%;
+        width: 50%;
+    }
+
+    to {
+        margin-left: 0;
+        width: 17vw;
+    }
+}
+
+@-o-keyframes slidein {
+    from {
+        margin-left: 100%;
+        width: 50%;
+    }
+
+    to {
+        margin-left: 0;
+        width: 17vw;
+    }
+}
+
+@-ms-keyframes slidein {
+    from {
+        margin-left: 100%;
+        width: 50%;
+    }
+
+    to {
+        margin-left: 0;
+        width: 17vw;
+    }
 }
 
 @keyframes slidein {
